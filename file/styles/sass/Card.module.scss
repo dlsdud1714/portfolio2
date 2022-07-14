@@ -1,0 +1,380 @@
+@import "./components/variables";
+@import "./components/text";
+@import "./components/contentFormat";
+@import "./components/card";
+
+.cards_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+}
+
+.first_column{
+    @extend .first_column;
+    .edu_title{
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $primary-yellow;
+    }
+    .edu_title_detail{
+        font-size: 1.2rem;
+    }
+    .edu_period{
+        font-size: $font-size-xs*0.6;
+        color: rgba($primary-white,50%);
+        margin: 0;
+    }
+    .edu_location{
+        font-size: $font-size-xs*0.7;
+        color: rgba($primary-white,80%);
+        margin: 0;
+    }
+
+}
+
+    .second_column{
+        @extend .second_column;
+        flex:2;
+        padding: 2rem;
+
+        .keyword_container{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            .keyword{
+                display: flex;
+                flex-direction: row;
+                gap:1rem;
+                font-size: $font-size-sm;
+                // align-items: center;
+
+                svg{
+                    font-size: 1.2rem;
+                    margin-top: 7px;
+                }
+                .keyword_text{
+                    margin:0;
+                }
+            }
+            .keyword1_in{
+                position: absolute;
+                left:0%;
+                top:45%;
+                font-size: 2.5vw;
+                width: fit-content;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword2_in{
+                position: absolute;
+                left:10%;
+                top:5%;
+                font-size: 1.8vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword3_in{
+                position: absolute;
+                left:5%;
+                top:70%;
+             
+                font-size: 1.5vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword4_in{
+                position: absolute;
+                right:10%;
+                top:20%;
+                font-size: 2vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword5_in{
+                position: absolute;
+                left:20%;
+                top:90%;
+                font-size: 2vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword6_in{
+                position: absolute;
+                left:15%;
+                top:27%;
+                font-size: 2vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword7_in{
+                position: absolute;
+                right:0%;
+                top:78%;
+                font-size: 2.1vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword1_uc{
+                position: absolute;
+                left:30%;
+                top:65%;
+                font-size: 2.6vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword2_uc{
+                position: absolute;
+                left:30%;
+                top:0%;
+                font-size: 1.6vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword3_uc{
+                position: absolute;
+                left:3%;
+                top:80%;
+                font-size: 1.4vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword4_uc{
+                position: absolute;
+                left:15%;
+                top:35%;
+                font-size: 2.4vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword5_uc{
+                position: absolute;
+                right:0%;
+                top:15%;
+                font-size: 2.4vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword6_uc{
+                position: absolute;
+                left:5%;
+                top:10%;
+                font-size: 1.5vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword7_uc{
+                position: absolute;
+                left:65%;
+                top:50%;
+                font-size: 1.5vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword1_ih{
+                position: absolute;
+                left:10%;
+                top:75%;
+                font-size: 2vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword2_ih{
+                position: absolute;
+                left:0%;
+                top:30%;
+                font-size: 1.8vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword3_ih{
+                position: absolute;
+                left:15%;
+                top:5%;
+                font-size: 2.5vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+            .keyword4_ih{
+                position: absolute;
+                left:60%;
+                top:70%;
+                font-size: 2vw;
+                &:hover{ 
+                    -webkit-transform: scale(1.1); 
+                    transition: transform 0.5s;
+                }
+            }
+        }
+       
+
+    }
+    @media  only screen and (max-width:660px) {
+        .edu_title{       
+            font-size: 3.5vw !important;
+            font-size: calc(12px + 3vw) !important;
+            // width: 49%;
+        }
+        .edu_div{
+            display: flex;
+            justify-content: space-between;
+        }
+        .edu_detailDiv{
+            // width: 49%;
+            display: flex;
+            flex-direction: column;
+            flex:1;
+        }
+        .edu_detailDiv2{
+            flex:1;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 5%;
+        }
+        .edu_title_detail{
+            // font-size: 3vw !important;
+            font-size: calc(12px + 1.5vw) !important;
+            // height: fit-content;
+            margin:0;
+            width: 100%;
+        }
+        .edu_period{
+            // font-size: 2.5vw !important;
+            font-size: calc(12px + 1vw) !important;
+            width: fit-content;
+        }
+        .edu_location{
+            font-size: 2.5vw !important;
+            font-size: calc(12px + 1vw) !important;
+        }
+        .keyword1_in{
+            
+            // left:30%;
+            // top:45%;
+            font-size: 2.5*2.2vw !important;
+            
+        }
+        .keyword2_in{
+            // left:10%;
+            // top:10%;
+            font-size: 1.8*2.2vw !important;
+           
+        }
+        .keyword3_in{
+           
+            font-size: 1.5*2.2vw !important;
+           
+        }
+        .keyword4_in{
+            
+            font-size: 2*2.2vw !important;
+           
+        }
+        .keyword5_in{
+            
+            font-size: 2*2.2vw !important;
+           
+        }
+        .keyword6_in{
+           
+            font-size: 2*2.2vw !important;
+            
+        }
+        .keyword7_in{
+           
+            font-size: 2.1*2.2vw !important;
+           
+        }
+        .keyword1_uc{
+            
+            font-size: 2.6*2.2vw !important;
+           
+        }
+        .keyword2_uc{
+            
+            font-size: 1.6*2.2vw !important;
+            
+        }
+        .keyword3_uc{
+            
+            font-size: 1.4*2.2vw !important;
+           
+        }
+        .keyword4_uc{
+           
+            font-size: 2.4*2.2vw !important;
+            
+        }
+        .keyword5_uc{
+            
+            font-size: 2.4*2.2vw !important;
+            
+        }
+        .keyword6_uc{
+           
+            font-size: 1.5*2.2vw !important;
+           
+        }
+        .keyword7_uc{
+            
+            font-size: 1.5*2.2vw !important;
+            
+        }
+        .keyword1_ih{
+            
+            font-size: 2*2.2vw !important;
+           
+        }
+        .keyword2_ih{
+            
+            font-size: 1.8*2.2vw !important;
+            
+        }
+        .keyword3_ih{
+            
+            font-size: 2.5*2.2vw !important;
+            
+        }
+        .keyword4_ih{
+            
+            font-size: 2*2.2vw !important;
+           
+        }
+     }

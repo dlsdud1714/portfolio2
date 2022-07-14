@@ -1,0 +1,42 @@
+.button{
+    background-color: transparent;
+    border: 1px solid $primary-blue;
+    box-sizing: border-box;
+    font-family: $header-font-family ;
+    font-size: $base-font-size;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    color: $primary-grey;
+    transform-style: preserve-3d;
+    @media  only screen and (max-width:660px) {
+    
+        
+            font-size: 1.5rem;
+       
+    }
+    &:hover{
+        outline:0;
+        cursor: pointer;
+    }
+    &:active{
+        outline:0;
+    }
+    &::before{
+        background-color: rgba($primary-orange,100%);
+        content: "";
+        height: calc(100% + 3px);
+        position: absolute;
+        right: -7px;
+        top: -9px;
+        transition: background-color 300ms ease-in;
+        width: 100%;
+        transform: translateZ(-1px);
+        // z-index: -1;
+    }
+
+}

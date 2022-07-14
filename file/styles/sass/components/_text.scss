@@ -1,0 +1,55 @@
+@each $key, $value in $font-colors{
+    @each $k, $v in $font-sizes{
+
+        .text_content_#{$key}_#{$k}{
+            color: $value;
+            font-size: $v;
+            font-family: $content-font-family;
+            text-shadow: $base-font-shadow;
+        }
+    }
+}
+.title_container{
+
+    position: relative;
+    width: fit-content;
+    padding-right: 1rem;
+    .title_h1{
+        font-family: $header-font-family;
+        height: 2rem;
+        color:$primary-grey;
+        // margin-bottom: 1rem;
+        margin: 0 0 1em 0;
+    }
+    .title_background{
+        width: 5rem;
+        position:absolute;
+        background-color: $primary-orange;
+        z-index: -1;
+        height: 1rem;
+        bottom:0;
+        right:0;
+    }
+}
+.title_h2{
+    font-family: $header-font-family;
+    font-size: 1.6rem;
+    margin: 0%;
+}
+.title_h3{
+    font-family: $header-font-family;
+    font-size: 1.2rem;
+}
+
+@each $key, $val in $font-colors{
+
+    .highlight_bg_#{$key}{
+        color: $val;
+        font-weight: 600;
+    }   
+    .highlight_bg_#{$key}_rv{
+        background-color: rgba($val, 80%);
+        color: $primary-white;
+        font-weight: 600;
+}
+}

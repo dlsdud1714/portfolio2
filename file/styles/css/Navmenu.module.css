@@ -1,0 +1,31 @@
+.links_container {
+  display: flex;
+  flex-direction: column;
+  top: 70px;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  gap: 1rem;
+  background-color: #ff8d21;
+}
+.links_container .links {
+  font-family: "Acme", sans-serif;
+  font-size: 25.2px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: fit-content;
+}
+.links_container .links::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0%;
+  left: 0;
+  height: 6px;
+  transition: all 0.2s;
+  background-color: #FFFFFF;
+}
+.links_container .links:hover::before {
+  width: 100%;
+}

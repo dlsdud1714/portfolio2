@@ -1,0 +1,146 @@
+.bodyContainer {
+  margin-top: 100px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.navbar_container {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #ff8d21;
+  flex-direction: row;
+  align-items: center;
+  color: #FFFFFF;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  padding: 2%;
+  z-index: 50;
+}
+.navbar_container .menuButton {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.navbar_container .logo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  cursor: pointer;
+}
+.navbar_container .logo_container .logo_first {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 50.4px;
+  height: fit-content;
+  margin-bottom: -15px;
+  color: #464B4E;
+}
+.navbar_container .logo_container .logo_second {
+  font-family: "Kelly Slab", cursive;
+  font-size: 25.2px;
+}
+.navbar_container .links_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+  margin: auto 2em;
+  flex: 1;
+  position: relative;
+}
+.navbar_container .links_container .links {
+  font-family: "Acme", sans-serif;
+  font-size: calc(12px + 0.5vw);
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.navbar_container .links_container .links::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: -20%;
+  left: 0;
+  height: 6px;
+  transition: all 0.2s;
+  background-color: #FFFFFF;
+}
+.navbar_container .links_container .links:hover::before {
+  width: 100%;
+}
+.navbar_container .email_container {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-end;
+  align-items: flex-end;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.navbar_container .email_container .email {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 1.5em;
+  width: 170px;
+  font-size: 0.8em;
+  color: #264C78;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 677px) {
+  .bodyContainer {
+    margin-top: 70px !important;
+  }
+  .navbar_container {
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    height: 70px;
+  }
+  .navbar_container .menuButton {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .navbar_container .email_container {
+    flex: 1;
+    margin-top: 0 !important;
+  }
+  .logo_first {
+    font-size: 35.28px !important;
+    height: fit-content;
+    margin-bottom: -10px !important;
+    color: #464B4E;
+  }
+  .logo_second {
+    font-family: "Kelly Slab", cursive;
+    font-size: 17.64px !important;
+  }
+  .links_container {
+    display: none !important;
+  }
+  .links_container .links {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .email_container .email {
+    font-size: 3vw !important;
+    width: 40vw !important;
+  }
+}

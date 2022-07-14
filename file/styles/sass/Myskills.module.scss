@@ -1,0 +1,117 @@
+@import "./components/variables";
+@import "./components/text";
+@import "./components/contentFormat";
+.percentageBar_container{
+    height: 3rem;
+    width: 100%;
+    align-self: center;
+}
+.icon_container{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    margin:0 3rem;
+    justify-content: space-around;
+}
+.container_blue{
+    background-color: $primary-blue;
+    height:100%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    border-radius:  3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    padding: 3rem;
+    gap:1.5rem;
+    // gap:3rem;
+    .text_content_white_xs{
+        @extend .text_content_white_xs;
+        margin:0;
+        
+    }
+}
+.skills_container{
+    display: flex;
+    color: $primary-white;
+    flex-direction: column;
+    justify-content: center;
+    // align-items:center;
+    gap:1rem;
+    flex: 1 ;
+    // width: fit-content;
+    align-self: center;
+    justify-self: center;
+    width: 100% !important;
+    .skill{
+        
+        display: flex;
+        flex-direction: row;
+        gap:0.5rem;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .title_h3{
+            @extend .title_h3;
+            font-size: $base-font-size;
+            margin:0 !important;
+            margin-right:1rem;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .star_container{
+            // flex:1
+            display: flex;
+            
+        }
+    }
+}
+@media  only screen and (max-width:600px) {
+    .text_body{
+        flex-wrap: wrap;
+    }
+    .contents{
+        padding:5%;
+       
+    }
+    
+    .divided_container{
+        gap:0.8rem !important;
+        height:90vw;
+    }
+    .title_h2{
+        margin:0 0 5% 0;
+    }
+    .title_h3{
+        margin:0 0 5% 0;
+    }
+    .icon_container{
+        // width: 100vw;
+        margin: 0 ;
+        gap: 5%;
+        
+    }
+    .container_blue{
+       
+        padding:10%;
+        .text_content_white_xs{
+            font-size: 0.9rem !important;
+        }
+    }
+    .skills_container{
+        width: 100% !important;
+        .skill{
+            // justify-content: space-around !important;
+            .title_h3{
+                font-size: 1rem;
+            }
+            .star_container{
+                svg{
+
+                    font-size: 4vw !important;
+                }
+            }
+        }
+    }
+}

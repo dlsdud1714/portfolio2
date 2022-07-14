@@ -1,0 +1,109 @@
+.percentageBar_container {
+  height: 50%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bar_container {
+  height: 100%;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.1em;
+}
+.bar_container .frontEnd {
+  height: 1.5rem;
+  background-color: #ff8d21;
+  border-radius: 1rem 0 0 1rem;
+  height: 100%;
+}
+.bar_container .styling {
+  height: 1.5rem;
+  background-color: #50A0FF;
+  height: 100%;
+}
+.bar_container .backEnd {
+  height: 1.5rem;
+  background-color: #8040B7;
+  border-radius: 0 1rem 1rem 0;
+  height: 100%;
+}
+
+.circle_white {
+  background-color: #FFFFFF;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 1rem;
+}
+
+.circle_gray {
+  background-color: #464B4E;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 1rem;
+}
+
+.circle_orange {
+  background-color: #ff8d21;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 1rem;
+}
+
+.circle_blue {
+  background-color: #264C78;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 1rem;
+}
+
+.circle_blue2 {
+  background-color: #50A0FF;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 1rem;
+}
+
+.circle_yellow {
+  background-color: #FFCF21;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 1rem;
+}
+
+.circle_purple {
+  background-color: #8040B7;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 1rem;
+}
+
+.label_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+  margin-top: 0.3em;
+}
+.label_container .label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+.label_container .label .label_text {
+  color: #464B4E;
+  margin: 0;
+  height: 100%;
+  font-size: 0.6em;
+}
+
+@media only screen and (max-width: 600px) {
+  .percentageBar_container {
+    align-self: center;
+    justify-self: center;
+  }
+}

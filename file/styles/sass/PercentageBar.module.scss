@@ -1,0 +1,78 @@
+@import './components/variables';
+
+@mixin barFormat ($color) {
+    height: 1.5rem;
+    background-color: $color;
+        
+}
+.percentageBar_container{
+    height: 50%;
+    width: 100%;
+   margin: 0 auto;
+}
+.bar_container{
+    // width: 100%;
+    height: 100%;
+    // height: 2rem;
+    // border: 2px solid $primary-grey ;
+    border-radius: 1rem;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.1em;
+    .frontEnd{
+        @include barFormat($primary-orange);
+        border-radius: 1rem 0 0 1rem;
+        height: 100%;
+    }
+    .styling{
+        @include barFormat($secondary-blue);
+        height: 100%;
+    }
+    .backEnd{
+        @include barFormat($primary-purple);
+        border-radius: 0 1rem 1rem 0;
+        height: 100%;
+    }
+};
+
+@each $key, $value in $font-colors{
+    .circle_#{$key}{
+        background-color: $value;
+        height: 0.5em;
+        width: 0.5em;
+        border-radius: 1rem;
+    }
+}
+.label_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    margin-top:0.3em;
+    
+    .label{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+        // height: 100%;
+        .label_text{
+            color: $primary-grey;
+            margin: 0;
+            height: 100%;
+            font-size: 0.6em;
+        }
+    }
+}
+@media  only screen and (max-width:600px) {
+    .percentageBar_container{
+        // width: 90vw;
+        align-self: center;
+        justify-self: center;
+        // margin-right: 0 !important;
+    }
+    
+}

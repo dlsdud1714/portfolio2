@@ -15,22 +15,30 @@ const About = () => {
         <p className={styles.text_content_white_base}>
           Detail-oriented, self-motivated and meticulous full-stack web
           developer with passion in designing and initiating products.
-          Supportive team player thinking how to provide better
-          user experience continuously.
+          Supportive team player thinking how to provide better user experience
+          continuously.
         </p>
         <div className={styles.icons_container}>
           <Link href="mailto:iypark1714@gmail.com">
-          <MdEmail className={styles.icon} />
+            <a>
+              <MdEmail className={styles.icon} />
+            </a>
           </Link>
           <Link href="https://www.linkedin.com/in/inyoung-park/">
-
-          <FaLinkedinIn className={styles.icon} />
+            <a>
+              <FaLinkedinIn className={styles.icon} />
+            </a>
           </Link>
         </div>
       </div>
       <div className={styles.imgDiv}>
-
-      <Image src={MyImage} height="500px" width="385px" className={styles.img} />
+        <Image
+          src={MyImage}
+          height="500px"
+          alt=""
+          width="385px"
+          className={styles.img}
+        />
       </div>
     </div>
   );

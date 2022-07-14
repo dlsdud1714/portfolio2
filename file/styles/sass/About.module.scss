@@ -5,7 +5,7 @@
     background-color: $primary-orange;
     height: $base-background-height;
     display: flex;
-    padding: 0 10% 0 5%;
+    // padding: 0 10% 0 5%;
    
     position: relative;
     .imgDiv{
@@ -30,7 +30,7 @@
     //    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    margin-left: 38%;
+    margin-left: 30%;
        .name{
         font-size: 3rem;
         margin-bottom: 1rem;
@@ -59,6 +59,7 @@
 @media  only screen and (max-width:460px) {
     .container{
         height: 90vw !important;
+        // width: 100vw;
     }
     .imgDiv{
         width: 50%;
@@ -92,5 +93,7 @@
     }
     .text_content_white_base{
         font-size: 4vw;
+        width: 90%;
+        align-self: flex-end;
     }
 }

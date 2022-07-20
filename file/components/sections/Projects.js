@@ -9,10 +9,10 @@ import styles from "../../styles/css/Projects.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 // import 'swiper/css/scrollbar';
 
 const projects = () => {
-  
   return (
     <div className={styles.contents} id="projects">
       <div className={styles.title_container}>
@@ -74,21 +74,19 @@ const projects = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.second_row}>
-                 
-                </div>
+                <div className={styles.second_row}></div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.container_blue}>
               <div className={styles.img_container}>
-                <Image src={project2} layout="fill" />
+                <Image src={project2} layout="fill" alt="" />
               </div>
               <div className={styles.text_container}>
                 <div className={styles.first_row}>
                   <h2 className={styles.title_h2}>
-                    Calgary Local business website
+                    Calgary Local Business website
                   </h2>
 
                   <div className={styles.text_details_container}>
@@ -102,7 +100,8 @@ const projects = () => {
                     <div className={styles.details}>
                       <p className={styles.title_h3}>STACK</p>
                       <p className={styles.text}>
-                        : React, JavaScript, CSS, Bootscrap, Express, and Mongo DB
+                        : React, JavaScript, CSS, Bootscrap, Express, and Mongo
+                        DB
                       </p>
                     </div>
                     <div className={styles.details_contribution}>
@@ -127,9 +126,13 @@ const projects = () => {
                   </div>
                 </div>
                 <div className={styles.second_row}>
-                  {/* <button className={styles.button}>
-                    Learn more about project
-                  </button> */}
+                  <Link href="/projects/localBusiness">
+                    <a className={styles.button_container}>
+                    <button className={styles.button}>
+                      Learn more about this project
+                    </button>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -525,182 +525,46 @@
   width: 100%;
 }
 
-.button {
-  background-color: transparent;
-  border: 1px solid #264C78;
-  box-sizing: border-box;
-  font-family: "Bebas Neue", cursive;
-  font-size: 28px;
-  margin: 1rem;
-  padding: 1rem;
-  position: relative;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+.project_detail_container {
   color: #464B4E;
-  transform-style: preserve-3d;
+  padding: 3%;
+  gap: 3%;
 }
-@media only screen and (max-width: 660px) {
-  .button {
-    font-size: 1.5rem;
-  }
-}
-.button:hover {
-  outline: 0;
-  cursor: pointer;
-}
-.button:active {
-  outline: 0;
-}
-.button::before {
-  background-color: #ff8d21;
-  content: "";
-  height: calc(100% + 3px);
-  position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
-  transform: translateZ(-1px);
-}
-
-.contents, .slide_background .contents {
-  width: 100%;
-}
-
-.text_body {
-  position: relative;
-}
-
-.container_blue {
-  background-color: #264C78;
-  border-radius: 3rem 0 3rem 0;
-  width: 91%;
-  margin: 2.5rem auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
-}
-.container_blue::before {
-  border: 2px solid #ff8d21;
-  content: "";
-  height: calc(100% + 3px);
-  position: absolute;
-  left: -15px;
-  top: -15px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
-  z-index: -1;
-  border-radius: 3rem 0 3rem 0;
-}
-.container_blue .img_container {
-  height: 30em;
-  width: 100%;
-  position: relative;
-  border-radius: 2rem 0 0 0;
-  border: 2px solid #FFFFFF;
-  overflow: hidden;
-}
-.container_blue .text_container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  color: #FFFFFF;
-  height: 30%;
-}
-.container_blue .text_container .first_row {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
-.container_blue .text_container .first_row .title_row {
+.project_detail_container .title_container {
   display: flex;
   flex-direction: row;
+  gap: 3%;
+  width: 100%;
+  flex-wrap: wrap;
 }
-.container_blue .text_container .first_row .text_details_container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3em;
+.project_detail_container .title_container .subtitle {
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: 4px;
 }
-.container_blue .text_container .first_row .text_details_container .details {
-  display: flex;
-  flex-direction: column;
-}
-.container_blue .text_container .first_row .text_details_container .details .text {
-  margin: 0;
-  flex: 5;
-}
-.container_blue .text_container .first_row .text_details_container .details_contribution {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3em;
-}
-.container_blue .text_container .title_h2 {
-  flex: 1;
-}
-.container_blue .text_container .sub_description_container .sub_description {
+.project_detail_container .outline_container .info_container .contribution_container {
   display: flex;
   flex-direction: row;
-  margin: 0.2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3%;
 }
-.container_blue .text_container .sub_description_container .sub_description .sub_title {
-  flex: 1;
-  margin: 0;
-  font-size: 0.8em;
-  color: rgb(185, 184, 184);
+.project_detail_container .outline_container .info_container .contribution_container .first_column {
+  flex: 1 1 400px;
 }
-.container_blue .text_container .sub_description_container .sub_description .sub_content {
-  flex: 1;
-  margin: 0;
-  font-size: 0.8em;
-  color: rgb(185, 184, 184);
-}
-.container_blue .text_container .second_row {
-  flex: 1;
+.project_detail_container .outline_container .info_container .contribution_container .first_column .photo_container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.container_blue .text_container .second_row .button_container {
-  display: flex;
+.project_detail_container .outline_container .info_container .contribution_container .second_column {
+  flex: 1 1 400px;
 }
-.container_blue .text_container .second_row .button_container .button {
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  width: 20rem;
-  margin: 5% auto 0 auto;
+.project_detail_container .outline_container .info_container .contribution_container .second_column .percentageBar_container {
+  height: 3rem;
 }
 
-.title_h3 {
-  font-family: "Assistant", sans-serif;
-  margin: 0;
-  flex: 1;
-  white-space: nowrap;
-  font-weight: bolder;
-  font-size: 1rem;
-}
-
-.percentageBar_container {
-  height: 2rem;
-}
-
-.project_backgroud {
-  position: absolute;
-  width: 120%;
-  background-color: rgba(175, 208, 232, 0.2392156863);
-  top: 18%;
-  height: 65%;
-  left: -6%;
-}
-
-@media only screen and (max-width: 660px) {
-  .button {
-    width: 90% !important;
-  }
-  .img_container {
-    height: 20em !important;
-  }
+.label {
+  font-family: "Bebas Neue", cursive;
+  margin-top: 0;
 }

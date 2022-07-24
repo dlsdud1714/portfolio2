@@ -102,8 +102,6 @@
   }
   .navbar_container {
     justify-content: flex-start;
-    gap: 1%;
-    padding: 3%;
     height: 70px;
   }
   .navbar_container .menuButton {

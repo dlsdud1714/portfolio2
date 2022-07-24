@@ -119,14 +119,15 @@
     }
     .navbar_container{
         justify-content: flex-start;
-        // gap:1% ;
-        // padding: 3%;
+        gap:3% ;
+        padding: 3%;
         height: 70px;
         // padding: 2%;
         // height: 8%;
         .menuButton{
             background-color: transparent;
             border: none;
+            padding:0;
             // border-radius: 3px;
             color: $primary-white;
             display: flex;

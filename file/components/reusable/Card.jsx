@@ -11,7 +11,7 @@ const Card = () => {
             <p className={styles.edu_title}>INCEPTION U</p>
             <div className={styles.edu_div}>
 
-            <p className={styles.edu_period}>2022-02 - 2022-07</p>
+            <p className={styles.edu_period}>2022-02 ~ 2022-07</p>
             <p className={styles.edu_location}>Calgary, Canada</p>
           </div>
           <div className={styles.edu_detailDiv2}>
@@ -55,7 +55,7 @@ const Card = () => {
             <div className={styles.edu_detailDiv}>
           <p className={styles.edu_title}>University of Calgary</p>
           <div className={styles.edu_div}>
-              <p className={styles.edu_period}>2018-09 - 2022-01</p>
+              <p className={styles.edu_period}>2018-09 ~ 2022-01</p>
               <p className={styles.edu_location}>Calgary, Canada</p>
             </div>
             <div className={styles.edu_detailDiv2}>
@@ -99,7 +99,7 @@ const Card = () => {
           <div className={styles.edu_detailDiv}>
             <p className={styles.edu_title}>Inha University</p>
           <div className={styles.edu_div}>
-            <p className={styles.edu_period}>2013 03 - 2017-08</p>
+            <p className={styles.edu_period}>2013-03 ~ 2017-08</p>
             <p className={styles.edu_location}>Incheon, South Korea</p>
           </div>
           <div className={styles.edu_detailDiv2}>

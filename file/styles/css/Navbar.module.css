@@ -102,11 +102,14 @@
   }
   .navbar_container {
     justify-content: flex-start;
+    gap: 3%;
+    padding: 3%;
     height: 70px;
   }
   .navbar_container .menuButton {
     background-color: transparent;
     border: none;
+    padding: 0;
     color: #FFFFFF;
     display: flex;
     justify-content: center;

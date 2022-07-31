@@ -35,7 +35,7 @@ const Card = () => {
             </div>
             <div className={styles.keyword3_in}>Full-stack</div>
             <div className={styles.keyword4_in}>
-              <span className={styles.highlight_bg_blue_rv}>Scrum & Agail</span>
+              <span className={styles.highlight_bg_blue_rv}>Scrum & Agile</span>
             </div>
             <div className={styles.keyword5_in}>
               <span className={styles.highlight_bg_purple}>MERN</span>

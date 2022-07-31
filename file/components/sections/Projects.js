@@ -100,7 +100,7 @@ const projects = () => {
                     <div className={styles.details}>
                       <p className={styles.title_h3}>STACK</p>
                       <p className={styles.text}>
-                        : React, JavaScript, CSS, Bootscrap, Express, and Mongo
+                        : React, JavaScript, CSS, Bootstrap, Express, and Mongo
                         DB
                       </p>
                     </div>

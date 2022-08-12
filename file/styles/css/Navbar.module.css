@@ -2,6 +2,9 @@
   margin-top: 100px;
   overflow-x: hidden;
   position: relative;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar_container {
@@ -17,6 +20,9 @@
   top: 0;
   padding: 2%;
   z-index: 50;
+  max-width: 1366px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .navbar_container .menuButton {
   background-color: transparent;

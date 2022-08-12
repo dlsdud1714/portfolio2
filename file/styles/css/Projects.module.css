@@ -689,11 +689,11 @@
 
 .project_backgroud {
   position: absolute;
-  width: 120%;
+  width: 200%;
   background-color: rgba(175, 208, 232, 0.2392156863);
   top: 18%;
   height: 65%;
-  left: -6%;
+  left: -20%;
 }
 
 @media only screen and (max-width: 660px) {

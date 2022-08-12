@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import styles from "../../styles/css/Navbar.module.css"
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className={styles.maxWidth}>
       <Head>
         <title>IYP Portfolio</title>
         <meta name="description" content="Inyoung's portfolio" />

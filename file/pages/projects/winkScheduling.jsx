@@ -116,7 +116,7 @@ const WinkScheduling = () => {
                       2. Automatic timezone conversion
                     </div>
                     <div className={styles.text}>
-                      3. Filters to view co-workers schedules
+                      3. Filters to view co-workers&rsquo; schedules
                     </div>
                     <div className={styles.text}>4. Position display</div>
                   </div>
@@ -145,7 +145,7 @@ const WinkScheduling = () => {
                   <div className={styles.content_headline}>Daily calendar</div>
                   <div className={styles.text_container}>
                     <div className={styles.text}>
-                      1. My today shift with all of co-workers shifts working today
+                      1. My today shift with all of co-workers&rsquo; shifts working today
                     </div>
                     <div className={styles.text}>
                       2. Detailed, but simple UI/UX
@@ -170,7 +170,7 @@ const WinkScheduling = () => {
                       3. User-friendly filters
                     </div>
                     <div className={styles.text}>
-                      4. Display employees scheduled/available hours
+                      4. Display employees&rsquo; scheduled/available hours
                     </div>
                     <div className={styles.text}>
                       5. Working/vacation scheduling available
@@ -206,7 +206,7 @@ const WinkScheduling = () => {
                       1. Simple swap shift request 
                     </div>
                     <div className={styles.text}>
-                      2. Swap with other co-workers shift options 
+                      2. Swap with other co-workers&rsquo; shift options 
                     </div>
                     <div className={styles.text}>
                       3. Blocked schedule for swap shift confirmation 
@@ -218,17 +218,17 @@ const WinkScheduling = () => {
                 
                 <div className={styles.text_area}>
                   <div className={styles.content_headline}>
-                    Mobile weekly & daily calendar
+                    Mobile weekly &amp; daily calendar
                   </div>
                   <div className={styles.text_container}>
                     <div className={styles.text}>
-                      1. Simple & intuitive design to read schedules
+                      1. Simple &amp; intuitive design to read schedules
                     </div>
                     <div className={styles.text}>
                       2. weekly summary to check scheduled hours per week
                     </div>
                     <div className={styles.text}>
-                      3. Easy weekly & daily scheduler switch
+                      3. Easy weekly &amp; daily scheduler switch
                     </div>
                   </div>
                 </div>

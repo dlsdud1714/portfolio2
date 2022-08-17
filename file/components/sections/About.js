@@ -2,12 +2,14 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
-import MyImage from "../../utilities/IMG_3673-cutout2.png";
+// import MyImage from "../../utilities/IMG_3673-cutout2.png";
 import Link from "next/link";
 
 import styles from "../../styles/css/About.module.css";
 
 const About = () => {
+  const MyImage = '/picture/IMG_3673-cutout2.png'
+  
   return (
     <div className={styles.container} id="about">
       <div className={styles.text_container}>

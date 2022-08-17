@@ -1,6 +1,7 @@
 @import "./components/variables";
 @import "./components/text";
 @import "./components/contentFormat";
+@import './components/button';
 
 .project_detail_container{
     color: $primary-grey;
@@ -13,14 +14,56 @@
         gap:3%;
         width: 100%;
         flex-wrap: wrap;
+        margin-bottom: 1rem;
         .subtitle{
             height: fit-content;
             margin-top: auto;
             margin-bottom: 4px;
         }
     }
+    .projInfoBox{
+        padding:1%;
+        color: mix($primary-purple, $primary-grey, 10);
+        margin-left: auto;
+        width: fit-content;
+        font-size: 12px;
+        // display: flex;
+        .tableRow{
+            display: flex;
+            gap:0.5rem;
+
+            .tableHead{
+                flex:1;
+            }
+            .tableContent{
+                flex:1
+            }
+        }
+        
+    }
+    .mainphoto_container{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .outline_container{
+        padding: 1rem;
         .info_container{
+            .descriptNplayer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .player_wrapper{
+                    width: 100%;
+                    max-width: 800px;
+                    height: 80%;
+                
+                }
+                // .descriptWrapper{
+                //     max-width: 40rem;
+                // }
+            }
             .contribution_container{
                 display: flex;
                 flex-direction: row;

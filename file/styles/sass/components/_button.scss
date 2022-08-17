@@ -40,3 +40,10 @@
     }
 
 }
+.infoBox{
+    background-color: rgba($primary-purple,80%);
+    color: $primary-white;
+    border-radius: 0.5rem;
+    // border: 1px solid $primary-white;
+    // border-collapse: collapse;
+}

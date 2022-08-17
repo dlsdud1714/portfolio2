@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import PercentageBar from "../reusable/PercentageBar";
-import project2 from "../../utilities/project2_main.png";
-import project3 from "../../utilities/project3_main.png";
+// import project2 from "../../utilities/project2_main.png";
+// import project3 from "../../utilities/project3_main.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import styles from "../../styles/css/Projects.module.css";
@@ -13,6 +13,9 @@ import Link from "next/link";
 // import 'swiper/css/scrollbar';
 
 const projects = () => {
+  const project2 = '/picture/project2_main.png'
+  const project3 = '/picture/project3_main.png'
+  
   return (
     <div className={styles.contents} id="projects">
       <div className={styles.title_container}>

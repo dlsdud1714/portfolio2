@@ -525,6 +525,52 @@
   width: 100%;
 }
 
+.button {
+  background-color: transparent;
+  border: 1px solid #264C78;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+  font-size: 28px;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #464B4E;
+  transform-style: preserve-3d;
+}
+@media only screen and (max-width: 660px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+.button:hover {
+  outline: 0;
+  cursor: pointer;
+}
+.button:active {
+  outline: 0;
+}
+.button::before {
+  background-color: #ff8d21;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  transform: translateZ(-1px);
+}
+
+.infoBox {
+  background-color: rgba(128, 64, 183, 0.8);
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+}
+
 .project_detail_container {
   color: #464B4E;
   padding: 3%;
@@ -536,11 +582,48 @@
   gap: 3%;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 .project_detail_container .title_container .subtitle {
   height: fit-content;
   margin-top: auto;
   margin-bottom: 4px;
+}
+.project_detail_container .projInfoBox {
+  padding: 1%;
+  color: #4c4a59;
+  margin-left: auto;
+  width: fit-content;
+  font-size: 12px;
+}
+.project_detail_container .projInfoBox .tableRow {
+  display: flex;
+  gap: 0.5rem;
+}
+.project_detail_container .projInfoBox .tableRow .tableHead {
+  flex: 1;
+}
+.project_detail_container .projInfoBox .tableRow .tableContent {
+  flex: 1;
+}
+.project_detail_container .mainphoto_container {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project_detail_container .outline_container {
+  padding: 1rem;
+}
+.project_detail_container .outline_container .info_container .descriptNplayer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project_detail_container .outline_container .info_container .descriptNplayer .player_wrapper {
+  width: 100%;
+  max-width: 800px;
+  height: 80%;
 }
 .project_detail_container .outline_container .info_container .contribution_container {
   display: flex;

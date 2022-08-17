@@ -608,6 +608,12 @@
   transform: translateZ(-1px);
 }
 
+.infoBox {
+  background-color: rgba(128, 64, 183, 0.8);
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+}
+
 .text_body {
   display: flex;
   flex-direction: column;

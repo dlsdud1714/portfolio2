@@ -53,7 +53,7 @@ const projects = () => {
                     <div className={styles.details}>
                       <p className={styles.title_h3}>STACK</p>
                       <p className={styles.text}>
-                        : React, JavaScript, CSS, Express, and mySQL
+                        : React, JavaScript, CSS, Express, MUI and mySQL
                       </p>
                     </div>
                     <div className={styles.details_contribution}>
@@ -77,7 +77,17 @@ const projects = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.second_row}></div>
+                <div className={styles.second_row}>
+                <div className={styles.second_row}>
+                  <Link href="/projects/winkScheduling">
+                    <a className={styles.button_container}>
+                    <button className={styles.button}>
+                      Learn more about this project
+                    </button>
+                    </a>
+                  </Link>
+                </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>

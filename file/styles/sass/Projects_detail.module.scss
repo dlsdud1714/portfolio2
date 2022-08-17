@@ -25,7 +25,7 @@
         padding:1%;
         color: mix($primary-purple, $primary-grey, 10);
         margin-left: auto;
-        width: fit-content;
+        width: 200px;
         font-size: 12px;
         // display: flex;
         .tableRow{
@@ -33,10 +33,15 @@
             gap:0.5rem;
 
             .tableHead{
-                flex:1;
+                flex:1 1 ;
             }
             .tableContent{
-                flex:1
+                flex:1 1 ;
+            }
+            .tableContent_blue{
+                color: $primary-blue;
+                text-decoration: underline;
+                @extend .tableContent
             }
         }
         
@@ -57,8 +62,6 @@
                 .player_wrapper{
                     width: 100%;
                     max-width: 800px;
-                    height: 80%;
-                
                 }
               
             }
@@ -104,37 +107,42 @@
     display: flex;
     flex-direction: column;
     gap:5rem;
-
+    
     .content{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap:1rem;
+        // flex-wrap: wrap;
+        gap:3rem;
         justify-content: center;
+        align-items: center;
 
         .text_area{
+            max-width: 500px;
 
-            flex:1 1 300px;
+            // flex:1 1 300px;
             display: flex;
             flex-direction: column;
-            gap:1rem;
+            gap:2rem;
+            .content_headline{
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
             .text_container{
                 justify-self: center;
                 align-self: center;
                 margin-top: auto;
                 margin-bottom: auto;
-                max-width: 400px;
+                
+                font-size: 1.2rem;
                 .text{
                     padding-bottom: 1rem;
                 }
             }
-            .content_headline{
-                font-size: 1.7rem;
-                font-weight: 600;
-            }
+            
         }
         .photo_area{
-            width: 400px;
+            width: fit-content;
+            max-width: 450px;
             // height: 300px;
             // align-self: center;
             // justify-self: center;
@@ -143,4 +151,83 @@
     }
    }
    
+}
+@media  only screen and (max-width:1000px) {
+    .contents_tilted{
+        padding: 3rem;
+
+        .content{
+    
+            align-items: flex-start !important;
+            flex-direction: column !important;
+            
+        }
+        .text_area{
+            order:1;
+            max-width: 100% !important;
+            width: 100% !important;
+           
+        }
+        .photo_area{
+            order:2;
+            max-width: 100% !important;
+        }
+    }
+
+}
+@media  only screen and (max-width:1000px) {
+    .contents_tilted{
+        padding: 3rem;
+
+        .content{
+            gap:1rem !important;
+            align-items: flex-start !important;
+            flex-direction: column !important;
+            
+        }
+        .text_area{
+            order:1;
+            max-width: 100% !important;
+            width: 100% !important;
+           
+        }
+        .photo_area{
+            order:2;
+            max-width: 100% !important;
+            align-self: center;
+        }
+    }
+
+}
+@media  only screen and (max-width:400px) {
+    .contents_tilted{
+        padding: 1rem !important;
+        gap:2rem !important;
+
+        .content{
+            gap:1rem !important;
+            align-items: flex-start !important;
+            flex-direction: column !important;
+            
+        }
+        .text_area{
+            order:1;
+            max-width: 100% !important;
+            width: 100% !important;
+            .content_headline{
+
+                font-size: 1rem !important;
+            }
+            .text_container{
+                font-size: 0.8rem !important;
+            }
+           
+        }
+        .photo_area{
+            order:2;
+            max-width: 100% !important;
+            align-self: center;
+        }
+    }
+
 }

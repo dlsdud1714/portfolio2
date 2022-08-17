@@ -116,7 +116,7 @@ const WinkScheduling = () => {
                       2. Automatic timezone conversion
                     </div>
                     <div className={styles.text}>
-                      3. Filters to view co-workers' schedules
+                      3. Filters to view co-workers schedules
                     </div>
                     <div className={styles.text}>4. Position display</div>
                   </div>
@@ -145,7 +145,7 @@ const WinkScheduling = () => {
                   <div className={styles.content_headline}>Daily calendar</div>
                   <div className={styles.text_container}>
                     <div className={styles.text}>
-                      1. My today shift with all of co-workers' shifts working today
+                      1. My today shift with all of co-workers shifts working today
                     </div>
                     <div className={styles.text}>
                       2. Detailed, but simple UI/UX
@@ -170,7 +170,7 @@ const WinkScheduling = () => {
                       3. User-friendly filters
                     </div>
                     <div className={styles.text}>
-                      4. Display employees' scheduled/available hours
+                      4. Display employees scheduled/available hours
                     </div>
                     <div className={styles.text}>
                       5. Working/vacation scheduling available

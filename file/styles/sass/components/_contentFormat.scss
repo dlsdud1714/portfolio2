@@ -27,43 +27,8 @@
     // overflow-y: hidden;
      
     
-    .deco_background1{
-        width: 70px;
-        height: 20px;
-        background-color: $neon-pink;
-        z-index: -2;
-        top: -12px;
-        position:absolute;
-        right:0;
-    }
-    .deco_background2{
-        width: 80px;
-        height: 20px;
-        background-color: $neon-blue;
-        z-index: -2;
-        top: -5px;
-        position:absolute;
-        right:30px;
-    }
-    .deco_background3{
-        width: 80px;
-        height: 20px;
-        background-color: $neon-yellow;
-        z-index: -2;
-        bottom: -12px;
-        position:absolute;
-        left:0;
-    }
-    .deco_background4{
-        width: 80px;
-        height: 20px;
-        background-color: $neon-blue;
-        z-index: -2;
-        bottom: -5px;
-        position:absolute;
-        left:30px;
-    }
-    .contents{
+}
+    .contents_tilted{
         @extend .contents;
         transform: skew(0deg, 3deg);
         .text_body{
@@ -89,4 +54,40 @@
             
         }
     }
+
+.deco_background1{
+    width: 70px;
+    height: 20px;
+    background-color: $neon-pink;
+    z-index: -2;
+    top: -12px;
+    position:absolute;
+    right:0;
+}
+.deco_background2{
+    width: 80px;
+    height: 20px;
+    background-color: $neon-blue;
+    z-index: -2;
+    top: -5px;
+    position:absolute;
+    right:30px;
+}
+.deco_background3{
+    width: 80px;
+    height: 20px;
+    background-color: $neon-yellow;
+    z-index: -2;
+    bottom: -12px;
+    position:absolute;
+    left:0;
+}
+.deco_background4{
+    width: 80px;
+    height: 20px;
+    background-color: $neon-blue;
+    z-index: -2;
+    bottom: -5px;
+    position:absolute;
+    left:30px;
 }

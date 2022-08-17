@@ -13,7 +13,7 @@ const myskills = () => {
       <div className={styles.deco_background3}></div>
       <div className={styles.deco_background4}></div>
 
-      <div className={styles.contents}>
+      <div className={styles.contents_tilted}>
         <div className={styles.title_container}>
           <h1 className={styles.title_h1}>MY SKILLS</h1>
           <div className={styles.title_background}></div>

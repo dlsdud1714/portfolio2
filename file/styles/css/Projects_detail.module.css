@@ -633,6 +633,9 @@
   width: 100%;
   max-width: 800px;
 }
+.project_detail_container .outline_container .info_container .descriptNplayer .descriptWrapper {
+  align-self: flex-start;
+}
 .project_detail_container .outline_container .info_container .contribution_container {
   display: flex;
   flex-direction: row;

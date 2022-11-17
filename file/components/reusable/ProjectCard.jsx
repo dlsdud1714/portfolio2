@@ -27,30 +27,36 @@ export const ProjectCard = (props) => {
                 <p className={styles.title_h3}>STACK</p>
                 <p className={styles.text}>
                   :{" "}
-                  {project.stack.map((e, i) => {
-                    if (i == project.stack.length - 1) {
-                      return <span key={i}>and {e}</span>;
-                    }
+                  {project.stack.length === 1 ? (
+                    <span>{project.stack[0]}</span>
+                  ) : (
+                    project.stack.map((e, i) => {
+                      if (i == project.stack.length - 1) {
+                        return <span key={i}>and {e}</span>;
+                      }
 
-                    return <span key={i}>{e}, </span>;
-                  })}
+                      return <span key={i}>{e}, </span>;
+                    })
+                  )}
                 </p>
               </div>
-              <div className={styles.details_contribution}>
-                <p className={styles.title_h3}>MY CONTRIBUTION</p>
-                <div className={styles.percentageBar_container}>
-                  <PercentageBar
-                    color="white"
-                    frontEnd={project.myContribution[0]}
-                    styling={project.myContribution[1]}
-                    backEnd={project.myContribution[2]}
-                  />
+              {project.myContribution && (
+                <div className={styles.details_contribution}>
+                  <p className={styles.title_h3}>MY CONTRIBUTION</p>
+                  <div className={styles.percentageBar_container}>
+                    <PercentageBar
+                      color="white"
+                      frontEnd={project.myContribution[0]}
+                      styling={project.myContribution[1]}
+                      backEnd={project.myContribution[2]}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className={styles.details}>
+              )}
+              {project.duration&&(<div className={styles.details}>
                 <p className={styles.title_h3}>DURATION</p>
                 <p className={styles.text}>: {project.duration} months</p>
-              </div>
+              </div>)}
             </div>
           </div>
           <div className={styles.second_row}>

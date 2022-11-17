@@ -1,4 +1,5 @@
 import React from "react";
+import PMProject from "../../public/picture/PMproject_main.png";
 import project2 from "../../public/picture/project2_main.png";
 import project3 from "../../public/picture/project3_main.png";
 import styles from "../../styles/css/Projects.module.css";
@@ -6,11 +7,20 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ProjectCard } from "../reusable/ProjectCard";
-// import 'swiper/css/scrollbar';
 
 const projects = () => {
 
   const data = [
+    {
+      name: "Project Management Dashboard Figma UI/UX Design",
+      img:PMProject,
+      description:
+        "Dashboard to manage financials, project time, and human resources",
+      stack: ['Figma'],
+      // myContribution:[40,35,25],
+      // duration:3,
+      link:"/projects/PMDashboard"
+    },
     {
       name: "Employee Scheduling System",
       img:project3,
